@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#movie-form {
+    margin-bottom: 20px;
+}
+
+#reviewers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.reviewer-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#generated-review {
+    text-align: center;
+}

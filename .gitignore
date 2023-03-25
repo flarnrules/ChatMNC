@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.log
+.env
+/movie_review_app/models/
+/movie_review_app/cache_files/
+

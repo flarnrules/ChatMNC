@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night Club Reviews</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <form id="movie-form">
+        <label for="movie-input">Enter the movie title:</label>
+        <input type="text" id="movie-input" name="movie" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="reviewers">
+        <img src="path/to/reviewer1-image.jpg" alt="Reviewer 1" class="reviewer-image" data-reviewer="Reviewer1">
+        <img src="path/to/reviewer2-image.jpg" alt="Reviewer 2" class="reviewer-image" data-reviewer="Reviewer2">
+        <!-- Add the rest of the images for reviewers 3-7 -->
+    </div>
+    <div id="generated-review">
+        <!-- The generated review will be displayed here -->
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+</body>
+</html>
