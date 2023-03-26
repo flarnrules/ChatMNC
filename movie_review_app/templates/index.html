@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Night Club Reviews</title>
+    <title>ChatMNC</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <form id="movie-form">
-        <label for="movie-input">Enter the movie title:</label>
-        <input type="text" id="movie-input" name="movie" required>
-        <button type="submit">Submit</button>
-    </form>
-    <div id="reviewers">
-        <img src="path/to/reviewer1-image.jpg" alt="Reviewer 1" class="reviewer-image" data-reviewer="Reviewer1">
-        <img src="path/to/reviewer2-image.jpg" alt="Reviewer 2" class="reviewer-image" data-reviewer="Reviewer2">
-        <!-- Add the rest of the images for reviewers 3-7 -->
+    <h1>Movie Night Club Automated Chatbots ~ ChatMNC</h1>
+    <div class="main-container">
+      <input type="text" id="movie-input" placeholder="Enter a movie title...">
+      <button id="submit-button">Generate Reviews</button>
+      <div class="reviewer-container">
+        <div class="reviewer">
+              <img class="reviewer-image" src="{{ url_for('static', filename='images/Ben.png') }}" alt="An image of a Bit Kid NFT that represents Ben">
+            </div>
+            <div class="reviewer">
+              <img class="reviewer-image" src="{{ url_for('static', filename='images/Daniel.png') }}" alt="An image of a Bit Kid NFT that represents Daniel">
+            </div>
+            <div class="reviewer">
+              <img class="reviewer-image" src="{{ url_for('static', filename='images/Hake.png') }}" alt="An image of a Bit Kid NFT that represents Hake">
+            </div>
+            <div class="reviewer">
+              <img class="reviewer-image" src="{{ url_for('static', filename='images/Johnson.png') }}" alt="An image of a Bit Kid NFT that represents Johnson">
+            </div>
+            <div class="reviewer">
+              <img class="reviewer-image" src="{{ url_for('static', filename='images/Jordan.png') }}" alt="An image of a Bit Kid NFT that represents Jordan">
+            </div>
+            <div class="reviewer">
+              <img class="reviewer-image" src="{{ url_for('static', filename='images/Ryan.png') }}" alt="An image of a Bit Kid NFT that represents Ryan">
+            </div>
+            <div class="reviewer">
+              <img class="reviewer-image" src="{{ url_for('static', filename='images/Sam.png') }}" alt="An image of a Bit Kid NFT that represents Sam">
+            </div>
+          </div>
+      </div>
+      <div class="review-output">
+        <p id="generated-review"></p>
+      </div>
     </div>
-    <div id="generated-review">
-        <!-- The generated review will be displayed here -->
-    </div>
-    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
